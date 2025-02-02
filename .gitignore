@@ -42,6 +42,9 @@ override.tf.json
 ehthumbs.db
 Thumbs.db
 
+# Local reference files
+git-commands.md
+
 # CV directory
 CV/
 CV/*
