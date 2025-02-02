@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "handyman-terraform-state"
+  bucket = "spandevops-terraform-state-2024"
 
   # Prevent accidental deletion of this S3 bucket
   lifecycle {
