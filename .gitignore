@@ -41,3 +41,7 @@ override.tf.json
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# CV directory
+CV/
+CV/*
