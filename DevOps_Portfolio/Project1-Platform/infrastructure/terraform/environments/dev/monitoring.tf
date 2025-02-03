@@ -85,7 +85,7 @@ resource "aws_cloudwatch_metric_alarm" "vpc_endpoint_errors" {
   statistic          = "Sum"
   threshold          = "1"
   alarm_description  = "This metric monitors VPC endpoint connectivity issues"
-  alarm_actions      = [] # Add SNS topic ARN here when available
+  alarm_actions      = [aws_sns_topic.infrastructure_alerts.arn]
 
   dimensions = {
     VpcEndpointId = aws_vpc_endpoint.s3.id
